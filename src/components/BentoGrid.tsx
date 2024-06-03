@@ -6,13 +6,18 @@ import Link from "next/link";
 import MyStack from "./myStack";
 import MagicButton from "./MagicButton";
 import { Copy } from "lucide-react";
+import Image from "next/image";
 
 const BentoGridPage = () => {
   return (
     <section className="flex flex-col lg:flex-row   grow gap-5">
       <div id="box-1" className="flex-1 flex flex-col ">
         <div className=" lg:basis-[60%] h-96 grow relative">
-          <Link href="/myproject" id="project-box-1" className=" w-full h-full">
+          <Link
+            href="/myproject"
+            id="project-box-1"
+            className=" w-full h-full z-10"
+          >
             <video
               className="absolute border-[#1E2332] aspect-square w-full h-full object-cover border-2 rounded-3xl "
               autoFocus
@@ -51,9 +56,12 @@ const BentoGridPage = () => {
         </Link>
         <div className="lg:basis-2/3 w-full h-80 border border-zinc-950  rounded-3xl relative">
           <div className="">
-            <img
+            <Image
               src="/b1.svg"
+              width={80}
+              height={80}
               className="absolute w-full h-full object-cover object-center rounded-3xl"
+              alt=""
             />
 
             <div

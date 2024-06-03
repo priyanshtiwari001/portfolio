@@ -4,7 +4,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "@/components/ui/Pin";
 import MyStackPage from "@/components/myStack";
 import Link from "next/link";
-export const projects = [
+import Image from "next/image";
+const projects = [
   {
     id: 1,
     title: "Your Next Meal",
