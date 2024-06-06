@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
    
     <section className='flex flex-col grow   '>
-      <h1 className='text-3xl my-10 hidden lg:block '>Let's connect</h1>
+      <h1 className='text-3xl my-10 hidden lg:block '>Let&apos;s connect</h1>
 
       <div  className='h-[300px] flex flex-col gap-2 w-full lg:w-[95%] lg:mx-auto lg:h-full  p-3'>
     <div className='basis-1/2  border border-zinc-900 rounded-3xl'>

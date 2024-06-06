@@ -23,7 +23,7 @@ const layout = ({children}:{children:React.ReactNode}) => {
          </div>
         
       </div>
-<h1 className='text-4xl font-medium my-2 block lg:hidden'>Let's connect</h1>
+<h1 className='text-4xl font-medium my-2 block lg:hidden'>Let&apos;s connect</h1>
       <p className="text-gray-300 tracking-widest leading-5  text-md font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium quasi eaque reiciendis repellat? Quas accusantium labore optio nostrum maxime error Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, provident..</p>
 
      <div className=" flex gap-5 items-center justify-center lg:items-start lg:justify-start my-0 lg:my-40  ">
