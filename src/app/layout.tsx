@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={azeretMono.className}>
-        <AuroraBackground>
+        <div className="  bg-[url('/bg.png')] bg-no-repeat bg-zinc-900">
           {children}
-        </AuroraBackground>
+        </div>
       </body> 
     </html>
   );

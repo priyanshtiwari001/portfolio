@@ -12,31 +12,31 @@ const BentoGridPage = () => {
   return (
     <section className="flex flex-col lg:flex-row   grow gap-5">
       <div id="box-1" className="flex-1 flex flex-col ">
-        <div className=" lg:basis-[60%] h-96 grow relative">
-          <Link
-            href="/myproject"
+        <Link href='/myproject' className=" lg:basis-[60%] h-96 grow  ">
+          <div 
             id="project-box-1"
-            className=" w-full h-full z-10"
+            className=" w-full h-full relative"
           >
             <video
-              className="absolute border-[#1E2332] aspect-square w-full h-full object-cover border-2 rounded-3xl "
+              className="absolute border-[#1E2332] aspect-square w-full h-full object-cover border-2 rounded-3xl z-0"
               autoFocus
               autoPlay
               muted
               loop
               src="/clip.mp4"
             ></video>
-          </Link>
-          <div
+             <div
             style={{
               background:
                 "linear-gradient(0deg, #000000 15%, rgba(255,255,255,0) 100%, #000000 100%)",
             }}
-            className=" bg-opacity-55 flex justify-center items-center w-full h-full rounded-3xl z-2 absolute text-[27px] text-white"
+            className="bg-opacity-55 flex justify-center items-center w-full h-full rounded-3xl z-2 absolute  text-[27px] text-white"
           >
             My Projects
           </div>
-        </div>
+          </div>
+         
+        </Link>
 
         <div
           id="twin-box-1"
