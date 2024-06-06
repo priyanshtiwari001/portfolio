@@ -21,11 +21,11 @@ const ContactPage = () => {
         <div
           
           id="box-1"
-          className=" border basis-1/2 rounded-3xl bg-blue-800"
+          className=" border border-zinc-900 basis-1/2 rounded-3xl bg-blue-800"
         >
           <MyStack />
         </div>
-        <div id="box-2" className="border-2 basis-1/2 w-full h-full  rounded-3xl">
+        <div id="box-2" className="border border-zinc-900 basis-1/2 w-full h-full  rounded-3xl">
        <GridGlobe/>
         </div>
       </div>
