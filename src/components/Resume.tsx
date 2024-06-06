@@ -24,7 +24,7 @@ export function Resume() {
     },
   };
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "priyanshu108tiwari@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };

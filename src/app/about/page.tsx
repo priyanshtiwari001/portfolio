@@ -33,7 +33,7 @@ const AboutMePage = () => {
         </div>
         <div
           id="box-2"
-          className="pl-3 pt-3 bg-[#2a2f39] h-[330px] rounded-3xl lg:m-6 flex flex-col items-start justify-start gap-3"
+          className="pl-3 pt-3 bg-[#2a2f39] h-[370px] lg:h-[330px] rounded-3xl lg:m-6 flex flex-col items-start justify-start gap-3"
         >
           <h3 className="text-2xl">Experience</h3>
           <ul className="list-disc text-md px-4 flex flex-col gap-5">

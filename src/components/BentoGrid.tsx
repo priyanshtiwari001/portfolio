@@ -12,7 +12,7 @@ const BentoGridPage = () => {
   return (
     <section className="flex flex-col lg:flex-row   grow gap-5">
       <div id="box-1" className="flex-1 flex flex-col ">
-        <Link href='/myproject' className=" lg:basis-[60%] h-96 grow  ">
+        <Link href='/myprojects' className=" lg:basis-[60%] h-96 grow  ">
           <div 
             id="project-box-1"
             className=" w-full h-full relative"
@@ -42,7 +42,7 @@ const BentoGridPage = () => {
           id="twin-box-1"
           className=" relative   w-full flex flex-col lg:flex-row justify-between items-center  m-2 gap-3"
         >
-          <div className="lg:w-96 lg:h-72">
+          <div className="w-full h-full lg:w-96 lg:h-72 ">
           <Globe />
           </div>
           <Resume />

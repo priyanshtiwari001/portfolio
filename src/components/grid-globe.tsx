@@ -4,6 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const World = dynamic(() => import("./ui/globe").then((m) => m.World), {
   ssr: false,
@@ -401,7 +402,7 @@ const GridGlobe = () => {
     // change absolute -left-5 top-36, add w-full h-full md:top-40
     <div className=" overflow-hidden relative flex items-center justify-center bg-yellow-600 rounded-3xl w-full h-full   ">
       {/* remove h-full md:h-[40rem] */}
-      <div className="max-w-7xl mx-auto w-full lg:absolute  h-96  top-0 bottom-0">
+      <Link href='/mycontact' className="max-w-7xl mx-auto w-full lg:absolute  h-96  top-0 bottom-0">
        
         <div className="absolute  w-full   h-full  z-40 " />
         {/* remove -bottom-20 */}
@@ -410,7 +411,7 @@ const GridGlobe = () => {
         </div>
 
         <h1 className="absolute top-4 text-lg left-7">My contacts</h1>
-      </div>
+      </Link>
     </div>
   );
 };
