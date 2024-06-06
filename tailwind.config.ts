@@ -11,13 +11,13 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        aurora: "aurora 60s linear infinite",
+        aurora: "aurora 60s ease-out infinite",
         shimmer: "shimmer 2s linear infinite",
       },
       keyframes:{
         aurora: {
           from: {
-            backgroundPosition: "50% 50%, 50% 50%",
+            backgroundPosition: "80% 80%, 80% 80%",
           },
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
