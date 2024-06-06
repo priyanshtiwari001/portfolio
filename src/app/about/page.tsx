@@ -1,6 +1,8 @@
 import MyStackPage from "@/components/myStack";
+
 import Link from "next/link";
 import React from "react";
+import GridGlobe from "@/components/grid-globe";
 
 const AboutMePage = () => {
   return (
@@ -74,8 +76,8 @@ const AboutMePage = () => {
         >
           <MyStackPage />
         </Link>
-        <div id="box-2" className="border-2 basis-1/2 pl-3 pt-3 rounded-3xl">
-          box-1
+        <div id="box-2" className="border-2 basis-1/2 w-full h-full  rounded-3xl">
+       <GridGlobe/>
         </div>
       </div>
     </section>

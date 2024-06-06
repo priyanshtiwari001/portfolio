@@ -5,6 +5,7 @@ import { PinContainer } from "@/components/ui/Pin";
 import MyStackPage from "@/components/myStack";
 import Link from "next/link";
 import Image from "next/image";
+import GridGlobe from "@/components/grid-globe";
 const projects = [
   {
     id: 1,
@@ -115,8 +116,8 @@ const MyProject = () => {
         >
           <MyStackPage />
         </Link>
-        <div id="box-2" className="border-2 basis-1/2 pl-3 pt-3 rounded-3xl">
-          box-1
+        <div id="box-2" className="border-2 basis-1/2 w-full h-full  rounded-3xl">
+       <GridGlobe/>
         </div>
       </div>
     </>

@@ -399,13 +399,13 @@ const GridGlobe = () => {
   return (
     // remove dark:bg-black bg-white h-screen md:h-auto  w-full flex-row py-20
     // change absolute -left-5 top-36, add w-full h-full md:top-40
-    <div className=" overflow-hidden relative flex items-center justify-center bg-yellow-600 rounded-3xl w-full h-full   lg:w-96 lg:h-72">
+    <div className=" overflow-hidden relative flex items-center justify-center bg-yellow-600 rounded-3xl w-full h-full   ">
       {/* remove h-full md:h-[40rem] */}
       <div className="max-w-7xl mx-auto w-full lg:absolute  h-96  top-0 bottom-0">
        
         <div className="absolute  w-full   h-full  z-40 " />
         {/* remove -bottom-20 */}
-        <div className="absolute lg:w-96 w-full h-[700px]  z-10">
+        <div className="absolute w-full h-[700px]  z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
 

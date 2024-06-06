@@ -42,7 +42,9 @@ const BentoGridPage = () => {
           id="twin-box-1"
           className=" relative   w-full flex flex-col lg:flex-row justify-between items-center  m-2 gap-3"
         >
+          <div className="lg:w-96 lg:h-72">
           <Globe />
+          </div>
           <Resume />
         </div>
       </div>
