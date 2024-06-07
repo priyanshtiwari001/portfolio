@@ -1,4 +1,5 @@
-import BentoGridPage from "@/components/BentoGrid";
+'use client';
+import BentoGridPage, { BentoSkeleton } from "@/components/BentoGrid";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { cn } from "@/utils/cn";
 import { azeretMono } from "@/utils/font";
@@ -6,8 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GithubIcon, Linkedin, LinkedinIcon, Menu, MenuIcon, MenuSquare, MenuSquareIcon, Twitter, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense, useState } from "react";
+import Loading from "./loading";
+
 
 export default function Home() {
+ 
   return (
   <main className="relative  min-h-screen flex flex-col lg:flex-row text-white p-6">
   <div id="left" className="  grow-0   lg:basis-1/4" >
@@ -75,9 +80,15 @@ export default function Home() {
     <div style={{
       flexGrow:'10'
     }} id='right-dasboard' className="flex flex-col  ">
-        <BentoGridPage/>
+     
+     <BentoGridPage />
+  {/* <BentoGridPage.Skeleton/> */}
+    
+      
     </div>
   </div>
   </main>
   );
 }
+
+
