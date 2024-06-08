@@ -23,7 +23,7 @@ const BentoGridPage = () => {
       );
     });
    }
-    console.log(isLoading);
+    
   },[])
 
   

@@ -4,13 +4,15 @@ import Image from "next/image";
 import { azeretMono } from "@/utils/font";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GithubIcon, Linkedin, LinkedinIcon, Menu, MenuIcon, Twitter, X } from "lucide-react";
+import NavButton from '@/components/nav-button/nav-button';
 const layout = ({children}:{children:React.ReactNode}) => {
   return (
     <main className="relative scroll-smooth  min-h-screen flex flex-col lg:flex-row text-white p-6">
   <div id="left" className="  grow-0  lg:basis-1/4  " >
     <aside className=" lg:fixed left-0 top-0 lg:h-screen lg:w-1/4  flex flex-col gap-y-7 mx-4 scroll p-0 lg:p-5  mt-2 lg:mt-6">
 
-      <div className="flex justify-start items-center gap-3 ">
+    <div className="flex items-center justify-between">
+    <div className="flex justify-start items-center gap-3 mt-2 lg:mt-6 ">
         <Image style={{
           width:'4em',
           
@@ -21,8 +23,11 @@ const layout = ({children}:{children:React.ReactNode}) => {
          <span className="text-xs text-gray-400">
           Web developer</span>
          </div>
-        
       </div>
+      <div className="block  lg:hidden ">
+          <NavButton/>
+         </div>
+    </div>
 <h1 className='text-4xl font-medium my-2 block lg:hidden'>Let&apos;s connect</h1>
       <p className="text-gray-300 tracking-widest leading-5  text-md font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium quasi eaque reiciendis repellat? Quas accusantium labore optio nostrum maxime error Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, provident..</p>
 
@@ -59,7 +64,7 @@ const layout = ({children}:{children:React.ReactNode}) => {
       
       <h1>17:32 May 31, 2024</h1>
      <div>
-      <Menu/>
+      <NavButton/>
      </div>
     </div>
     <div  id='right-dasboard' className="flex-1    flex flex-col">

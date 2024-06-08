@@ -74,3 +74,13 @@
       @apply bg-background text-foreground;
     }
   }
+
+@layer base{
+    .linkContainer{
+
+      perspective: 120px;
+
+      perspective-origin: bottom;
+
+  }
+}

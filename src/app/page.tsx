@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useState } from "react";
 import Loading from "./loading";
+import NavButton from '@/components/nav-button/nav-button';
 
 
 export default function Home() {
@@ -18,7 +19,8 @@ export default function Home() {
   <div id="left" className="  grow-0   lg:basis-1/4" >
     <aside className=" flex flex-col gap-y-7 mx-4  ">
 
-      <div className="flex justify-start items-center gap-3 mt-2 lg:mt-6 ">
+    <div className="flex items-center justify-between">
+    <div className="flex justify-start items-center gap-3 mt-2 lg:mt-6 ">
         <Image style={{
           width:'4em',
           
@@ -29,8 +31,12 @@ export default function Home() {
          <span className="text-xs text-gray-400">
           Web developer</span>
          </div>
-        
       </div>
+      <div className="block  lg:hidden ">
+          <NavButton/>
+         </div>
+    </div>
+     
 
       <p className="text-gray-300 tracking-widest leading-5  text-md font-light">I specialize in crafting visually striking and user-friendly digital experiences. With a passion for blending aesthetics and functionality, I bring ideas to life, creating innovative solutions in the dynamic world of web design.</p>
 
@@ -73,8 +79,8 @@ export default function Home() {
     }} id='right-nav' className=" h-10 mb-2  hidden lg:flex items-center justify-between   mx-9">
       
       <h1>17:32 May 31, 2024</h1>
-     <div>
-      <MenuSquareIcon/>
+     <div className="relative z-10">
+     <NavButton/>
      </div>
     </div>
     <div style={{
