@@ -1,5 +1,5 @@
 'use client';
-import BentoGridPage, { BentoSkeleton } from "@/components/BentoGrid";
+import BentoGridPage from "@/components/BentoGrid";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { cn } from "@/utils/cn";
 import { azeretMono } from "@/utils/font";

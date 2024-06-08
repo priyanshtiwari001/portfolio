@@ -14,17 +14,17 @@ const BentoGridPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef(null);
   console.log(isLoading);
-  useEffect(()=>{
-   if(videoRef.current){
-    videoRef.current.addEventListener("loadeddata", (event) => {
-      console.log(
-        "Yay! The readyState just increased to  " +
-          "HAVE_CURRENT_DATA or greater for the first time.",
-      );
-    });
-   }
+  // useEffect(()=>{
+  //  if(videoRef.current){
+  //   videoRef.current.addEventListener("loadeddata", (event) => {
+  //     console.log(
+  //       "Yay! The readyState just increased to  " +
+  //         "HAVE_CURRENT_DATA or greater for the first time.",
+  //     );
+  //   });
+  //  }
     
-  },[])
+  // },[])
 
   
   //console.log(videoRef.current.readyState)
