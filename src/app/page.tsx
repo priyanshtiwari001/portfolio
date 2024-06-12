@@ -21,13 +21,10 @@ export default function Home() {
 
     <div className="flex items-center justify-between">
     <div className="flex justify-start items-center gap-3 mt-2 lg:mt-6 ">
-        <Image style={{
-          width:'4em',
-          
-        }} src='/smiling.png' alt='profile-img'  width={81}
-          height={81} className="border-2 rounded-full bg-gray-500"/>
+        <Image  src='/smiling.png' alt='profile-img'  width={81}
+          height={81} className="border-2 rounded-full bg-gray-500 w-[3.5em] sm:w-[4em]"/>
          <div className="flex flex-col">
-         <h1 className="text-2xl tracking-wide ">Priyanshu T. </h1>
+         <h1 className="text-xl sm:text-2xl tracking-wide ">Priyanshu</h1>
          <span className="text-xs text-gray-400">
           Web developer</span>
          </div>
