@@ -10,7 +10,7 @@ import Link from "next/link";
 import { Suspense, useState } from "react";
 import Loading from "./loading";
 import NavButton from '@/components/nav-button/nav-button';
-
+import { currentDate } from "@/lib/date";
 
 export default function Home() {
  
@@ -75,7 +75,7 @@ export default function Home() {
       flexGrow:'1'
     }} id='right-nav' className=" h-10 mb-2  hidden lg:flex items-center justify-between   mx-9">
       
-      <h1>17:32 May 31, 2024</h1>
+      <h1>{currentDate()}</h1>
      <div className="relative z-10">
      <NavButton/>
      </div>

@@ -33,17 +33,17 @@ const AboutMePage = () => {
         </div>
         <div
           id="box-2"
-          className="pl-3 pt-3 bg-[#2a2f39] h-[370px] lg:h-[330px] rounded-3xl lg:m-6 flex flex-col items-start justify-start gap-3"
+          className="pl-3 pt-3 bg-[#2a2f39] h-[280px]  rounded-3xl lg:m-6 flex flex-col items-start justify-start gap-3"
         >
           <h3 className="text-2xl">Experience</h3>
           <ul className="list-disc text-md px-4 flex flex-col gap-5">
-            <li className="">
+            {/* <li className="">
               Software Engineer
               <br className="" />
               <span className="text-xs text-gray-400 ">
                 HCLTech Tchnologies, Aug 2022 - present
               </span>
-            </li>
+            </li> */}
             <li>
               Full Stack Developer
               <br />{" "}

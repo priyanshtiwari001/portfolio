@@ -5,11 +5,12 @@ import { azeretMono } from "@/utils/font";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GithubIcon, Linkedin, LinkedinIcon, Menu, MenuIcon, Twitter, X } from "lucide-react";
 import NavButton from '@/components/nav-button/nav-button';
+import { currentDate } from '@/lib/date';
 const layout = ({children}:{children:React.ReactNode}) => {
   return (
     <main className="relative scroll-smooth  min-h-screen flex flex-col lg:flex-row text-white p-6">
   <div id="left" className="  grow-0  lg:basis-1/4  " >
-    <aside className=" lg:fixed left-0 top-0 lg:h-screen lg:w-1/4  flex flex-col gap-y-7 mx-4 scroll p-0 lg:p-5  mt-2 lg:mt-6">
+    <aside className=" lg:fixed left-0 top-0 lg:h-screen lg:w-1/4  flex flex-col gap-y-7 mx-4 lg:scroll p-0 lg:p-5  mt-2 lg:mt-6">
 
     <div className="flex items-center justify-between">
     <div className="flex justify-start items-center gap-3 mt-2 lg:mt-6 ">
@@ -59,7 +60,7 @@ const layout = ({children}:{children:React.ReactNode}) => {
   <div id="right" className=" overflow-y-auto grow lg:basis-[75%] flex flex-col ">
   <div id='right-nav' className=" h-16    hidden lg:flex items-center justify-between   mx-9">
       
-      <h1>17:32 May 31, 2024</h1>
+      <h1>{currentDate()}</h1>
      <div>
       <NavButton/>
      </div>
