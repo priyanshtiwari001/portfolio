@@ -37,14 +37,14 @@ const AboutMePage = () => {
         >
           <h3 className="text-2xl">Experience</h3>
           <ul className="list-disc text-md px-4 flex flex-col gap-5">
-            {/* <li className="">
+            <li className="">
               Software Engineer
               <br className="" />
               <span className="text-xs text-gray-400 ">
                 HCLTech Tchnologies, Aug 2022 - present
               </span>
-            </li> */}
-            <li>
+            </li>
+            {/* <li>
               Full Stack Developer
               <br />{" "}
               <span className="text-xs text-gray-400">
@@ -57,7 +57,7 @@ const AboutMePage = () => {
               <span className="text-xs text-gray-400">
                 VideoDubber.ai, April 2024 - May 2024
               </span>
-            </li>
+            </li> */}
             <li className="">
               Open Source contributor
               <br className="" />
